@@ -1,0 +1,34 @@
+real procedure one (real a, real b)
+[
+dim real x;
+x = (a + b) * 4;
+endp x;
+]
+
+real procedure two (word str)
+[
+dim real x;
+x = strln(str);
+endp x;
+]
+
+entry
+[
+dim real a;
+dim real b;
+dim real c; 
+dim real d;
+dim real e;
+dim real f;
+a = 2;
+b = 3;
+c = one (a,b) - 10;
+read (c);
+dim word g;
+g = "Hello world;
+d = two (g);
+f = power(a, 3); 
+read (d);
+read (f);
+read ("Завершение программы.");
+]
